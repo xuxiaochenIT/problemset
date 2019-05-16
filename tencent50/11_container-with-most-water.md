@@ -17,9 +17,19 @@
 > 输入: [1,8,6,2,5,4,8,3,7]  
 > 输出: 49
 
+### 解题思路
+
+思路：暴力求解，求每两个线段的面积，找最大值，但时间复杂度O(n^2)
+
 ### 题解
 
 ```
-
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        max_area = 0
+        for i in range(len(height)):
+            for j in range(1, len(height)):
+                max_area = max(min(height[i], height[j])*(j-i), max_area)
+        return max_area
 
 ```

@@ -1,3 +1,3 @@
 # problemset
 
-A repositories that recording my practice of algorithm
+A repository that recording my practice of algorithm
